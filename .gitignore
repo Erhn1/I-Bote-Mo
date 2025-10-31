@@ -1,0 +1,40 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# JetBrains IDEs
+.idea/
+*.iml
+out/
+
+# VSCode
+.vscode/
+
+# Node/General
+node_modules/
+
+# Android/Gradle
+.gradle/
+local.properties
+.settings/
+/build/
+*/build/
+.cxx/
+.externalNativeBuild/
+captures/
+
+# Logs
+*.log
+
+# Misc
+*.orig
+*.rej
+
+# Thumbnails
+._*
+
+# Python cache (if any tooling runs)
+__pycache__/
+*.pyc

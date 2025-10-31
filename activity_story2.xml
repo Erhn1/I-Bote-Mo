@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/story2"
+
+    tools:context=".story2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.7"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginBottom="140dp"
+                android:layout_marginLeft="80dp"
+                android:textSize="18sp"
+                android:id="@+id/UserPangalan1"
+                android:fontFamily="@font/boldoa"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:layout_gravity="center" >
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:backgroundTint="#FFFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:layout_width="195dp"
+                android:layout_height="50dp"
+                android:text="SIGE PO."
+                android:backgroundTint="#187434"
+                android:onClick="SigePo"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/asap"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="70dp">
+            </Space>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:backgroundTint="#FFFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true" />
+
+            <Button
+                android:layout_width="195dp"
+                android:layout_height="50dp"
+                android:text="KAYO NALANG PO."
+                android:backgroundTint="#B71330"
+                android:onClick="KayoNalangPo"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/asap" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:text="LAGPASAN"
+                android:backgroundTint="#00187434"
+                android:onClick="Lagpasan"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:layout_gravity="right"
+                android:paddingRight="-10dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/asap" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

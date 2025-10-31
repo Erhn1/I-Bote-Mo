@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/story1"
+    tools:context=".story1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.7"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginBottom="105dp"
+                android:fontFamily="@font/boldoa"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/Pangalan"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/transparent"
+                android:hint="Ilagay ang iyong Pangalan"
+                android:textColor="@color/black"
+                android:textColorHint="#88838A"
+                android:fontFamily="@font/boldoa"
+                android:textAlignment="center"
+                android:textSize="21sp"/>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:backgroundTint="#FFFF"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                android:layout_width="195dp"
+                android:layout_height="50dp"
+                android:text="MAGPATULOY"
+                android:backgroundTint="#187434"
+                android:onClick="Magpatuloy"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/asap"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:text="LAGPASAN"
+                android:backgroundTint="#00187434"
+                android:onClick="Lagpasan"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:layout_gravity="right"
+                android:paddingRight="-10dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/asap"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
